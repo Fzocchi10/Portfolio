@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Franco Zocchi | Portfolio - Técnico en Programación & Backend Developer</title>
+    <meta name="description" content="Portfolio profesional de Franco Zocchi, Técnico en Programación graduado de la UNQ. Especialista en desarrollo backend con Java (Spring Boot), Node.js (TypeScript) y bases de datos (SQL/NoSQL).">
+    <meta name="keywords" content="Franco Zocchi, Franco Zocchi UNQ, Backend Developer, Java Spring Boot, Node.js TypeScript, Argentina, Programador, Desarrollo de APIs, MySQL, PostgreSQL, MongoDB, React, React Native">
+    <meta name="author" content="Franco Zocchi">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Franco Zocchi | Portfolio - Backend Developer">
+    <meta property="og:description" content="Portfolio profesional de Franco Zocchi, Técnico en Programación UNQ. Especialista en APIs, Java (Spring Boot), Node.js (TypeScript) y Bases de Datos.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=600&auto=format&fit=crop">
+
+    <!-- Stylesheets & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon Placeholder -->
+    <link rel="icon" type="image/png" href="https://img.icons8.com/neon/96/000000/console.png">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo text-gradient" id="nav-logo">FRANCO<span>ZOCCHI</span></a>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active" id="link-home">Inicio</a></li>
+                    <li><a href="#about" class="nav-link" id="link-about">Sobre Mí</a></li>
+                    <li><a href="#skills" class="nav-link" id="link-skills">Habilidades</a></li>
+                    <li><a href="#projects" class="nav-link" id="link-projects">Proyectos</a></li>
+                    <li><a href="#contact" class="nav-link" id="link-contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <i class="fa-solid fa-graduation-cap"></i> Graduado UNQ
+                    </div>
+                    <h1 class="hero-title">Franco Zocchi</h1>
+                    <div class="hero-subtitle">
+                        <span class="text-gradient" id="typing-text"></span>
+                    </div>
+                    <p class="hero-description">
+                        Técnico en Programación enfocado en crear arquitecturas backend robustas, limpias y altamente eficientes. Especializado en Java (Spring Boot), Node.js (TypeScript) y diseño avanzado de bases de datos relacionales y no relacionales.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary" id="btn-hero-projects">Ver Proyectos <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">Contactar <i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section-title">Sobre Mí</h2>
+                <p class="section-subtitle">Conoce mi enfoque profesional, formación académica y pasión por el desarrollo de software.</p>
+                
+                <div class="about-grid">
+                    <div class="about-details">
+                        <p class="about-p">
+                            Soy graduado como <span class="about-highlight text-gradient">Técnico Universitario en Programación</span> en la prestigiosa <span class="about-highlight">Universidad Nacional de Quilmes (UNQ)</span>. Mi formación académica me ha dotado de bases sólidas en algoritmos, estructuras de datos, patrones de diseño y metodologías de desarrollo.
+                        </p>
+                        <p class="about-p">
+                            Me apasiona resolver problemas complejos en el lado del servidor. Me enfoco en construir <span class="about-highlight">APIs REST efectivas</span>, modelar bases de datos óptimas y aplicar arquitecturas que garanticen la escalabilidad y mantenibilidad del software.
+                        </p>
+                        <p class="about-p">
+                            Aunque el frontend no es mi área de mayor especialización, poseo conocimientos sólidos de React y React Native que me permiten colaborar eficientemente en proyectos fullstack y desarrollar interfaces de usuario funcionales y conectadas correctamente con el backend.
+                        </p>
+                        
+                        <div class="unq-badge glass-panel">
+                            <div class="unq-icon">
+                                <i class="fa-solid fa-university"></i>
+                            </div>
+                            <div class="unq-text">
+                                <h4>Universidad Nacional de Quilmes</h4>
+                                <p>Título obtenido: Técnico Universitario en Programación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNOLOGIES / SKILLS SECTION -->
+        <section class="section" id="skills">
+            <div class="container">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <p class="section-subtitle">Las tecnologías y herramientas que domino y utilizo en mi día a día para crear soluciones.</p>
+                
+                <div class="skills-wrapper">
+                    <div class="skills-grid">
+                        <!-- Backend -->
+                        <div class="skills-category glass-panel">
+                            <h3 class="skills-category-title"><i class="fa-solid fa-server"></i> Backend</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag"><i class="fa-brands fa-java" style="color: #f89820;"></i> Java</span>
+                                <span class="skill-tag"><i class="fa-solid fa-leaf" style="color: #6db33f;"></i> Spring Boot</span>
+                                <span class="skill-tag"><i class="fa-brands fa-node-js" style="color: #339933;"></i> Node.js</span>
+                                <span class="skill-tag"><i class="fa-solid fa-code" style="color: #818cf8;"></i> Express</span>
+                                <span class="skill-tag"><i class="fa-brands fa-js" style="color: #f7df1e;"></i> TypeScript</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Databases -->
+                        <div class="skills-category glass-panel">
+                            <h3 class="skills-category-title"><i class="fa-solid fa-database"></i> Bases de Datos</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag"><i class="fa-solid fa-database" style="color: #00758f;"></i> MySQL</span>
+                                <span class="skill-tag"><i class="fa-solid fa-database" style="color: #336791;"></i> PostgreSQL</span>
+                                <span class="skill-tag"><i class="fa-solid fa-leaf" style="color: #47a248;"></i> MongoDB</span>
+                                <span class="skill-tag"><i class="fa-solid fa-project-diagram" style="color: #6366f1;"></i> Modelado DB</span>
+                                <span class="skill-tag"><i class="fa-solid fa-bolt" style="color: #fbbf24;"></i> Sequelize ORM</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Frontend -->
+                        <div class="skills-category glass-panel">
+                            <h3 class="skills-category-title"><i class="fa-solid fa-laptop-code"></i> Frontend (Secundario)</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag"><i class="fa-brands fa-react" style="color: #61dafb;"></i> React</span>
+                                <span class="skill-tag"><i class="fa-brands fa-react" style="color: #00d2ff;"></i> React Native</span>
+                                <span class="skill-tag"><i class="fa-brands fa-html5" style="color: #e34f26;"></i> HTML5 / CSS3</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Tools -->
+                        <div class="skills-category glass-panel">
+                            <h3 class="skills-category-title"><i class="fa-solid fa-tools"></i> Herramientas</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag"><i class="fa-brands fa-git-alt" style="color: #f05032;"></i> Git</span>
+                                <span class="skill-tag"><i class="fa-brands fa-github" style="color: #fff;"></i> GitHub</span>
+                                <span class="skill-tag"><i class="fa-solid fa-rocket" style="color: #ff6c37;"></i> Postman</span>
+                                <span class="skill-tag"><i class="fa-solid fa-memory" style="color: #facc15;"></i> Node-Cache</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section class="section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Mis Proyectos</h2>
+                <p class="section-subtitle">Una selección de sistemas en los que he trabajado, destacando el desarrollo backend, optimización y diseño de bases de datos.</p>
+                
+                <!-- Filters -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all" id="filter-all">Todos</button>
+                    <button class="filter-btn" data-filter="backend" id="filter-backend">Backend (Java/Node)</button>
+                    <button class="filter-btn" data-filter="databases" id="filter-databases">Bases de Datos</button>
+                    <button class="filter-btn" data-filter="frontend" id="filter-frontend">Frontend / Mobile</button>
+                </div>
+                
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Cards will be dynamically rendered/linked or structured in JS. For accessibility and fallback, we write them in HTML -->
+                    
+                    <!-- Project 1: RegistroPersonasVehiculos -->
+                    <article class="project-card glass-panel" data-id="1" data-categories="backend databases frontend">
+                        <div class="project-header">
+                            <div class="project-icon-wrapper">
+                                <i class="fa-solid fa-car-side"></i>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Registro Personas y Vehículos</h3>
+                            <p class="project-desc">Aplicación Fullstack web para gestionar registros completos de personas y sus vehículos asociados bajo Repository Pattern e inyección de dependencias.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">Spring Boot</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">React</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <span class="btn-details">Detalles <i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: CtaCteFlow -->
+                    <article class="project-card glass-panel" data-id="2" data-categories="backend databases">
+                        <div class="project-header">
+                            <div class="project-icon-wrapper">
+                                <i class="fa-solid fa-wallet"></i>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">CtaCteFlow</h3>
+                            <p class="project-desc">Sistema web para administrar cuentas corrientes de clientes, gestionando débitos, créditos, saldos y seguimiento financiero de forma simple y eficiente.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">Express</span>
+                                <span class="project-tag">PostgreSQL</span>
+                                <span class="project-tag">React</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <span class="btn-details">Detalles <i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Encargo -->
+                    <article class="project-card glass-panel" data-id="3" data-categories="backend databases frontend">
+                        <div class="project-header">
+                            <div class="project-icon-wrapper">
+                                <i class="fa-solid fa-truck-ramp-box"></i>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Encargo</h3>
+                            <p class="project-desc">Backend de pedidos desarrollado con Node.js y TS con Sequelize ORM en MySQL. Optimizado con caché en memoria. Frontend web en React y móvil en React Native.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">TypeScript</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">Sequelize</span>
+                                <span class="project-tag">React Native</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <span class="btn-details">Detalles <i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Tp-Combustible -->
+                    <article class="project-card glass-panel" data-id="4" data-categories="backend databases frontend">
+                        <div class="project-header">
+                            <div class="project-icon-wrapper">
+                                <i class="fa-solid fa-gas-pump"></i>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Tp-Combustible</h3>
+                            <p class="project-desc">Sistema de control y gestión de carga de combustible para flotas de vehículos. Backend desarrollado en Java y frontend interactivo en React.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">Spring Boot</span>
+                                <span class="project-tag">PostgreSQL</span>
+                                <span class="project-tag">React</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <span class="btn-details">Detalles <i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-subtitle">¿Tienes alguna pregunta, propuesta de proyecto o quieres charlar? ¡Escríbeme!</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-card glass-panel">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h5>Email</h5>
+                                    <a href="mailto:fzocchi97@gmail.com" id="email-link">fzocchi97@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h5>Ubicación</h5>
+                                    <p>Buenos Aires, Argentina (Graduado UNQ)</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h5>LinkedIn</h5>
+                                    <a href="https://www.linkedin.com/in/franco-zocchi" target="_blank" id="linkedin-link">franco.zocchi</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-btn" aria-label="GitHub" onclick="event.preventDefault();"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="social-btn" aria-label="LinkedIn" onclick="event.preventDefault();"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-panel glass-panel">
+                        <form id="contact-form">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Nombre</label>
+                                    <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="Tu email" required>
+                                </div>
+                            </div>
+                            <div class="form-group form-group-full" style="margin-bottom: 1.5rem;">
+                                <label for="subject" class="form-label">Asunto</label>
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder="Asunto del mensaje" required>
+                            </div>
+                            <div class="form-group form-group-full" style="margin-bottom: 2rem;">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea id="message" name="message" class="form-input" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;" id="btn-submit">Enviar Mensaje <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#home" class="logo text-gradient">FRANCO<span>ZOCCHI</span></a>
+            <p class="footer-copyright" id="footer-year">&copy; 2026 Franco Zocchi. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL DIALOG PLACEHOLDER -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-card glass-panel" id="modal-card">
+            <button class="modal-close" id="modal-close" aria-label="Cerrar modal"><i class="fa-solid fa-xmark"></i></button>
+            <div id="modal-data-container">
+                <!-- Data loaded dynamically in main.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATIONS -->
+    <div class="toast-container" id="toast-container">
+        <div class="toast toast-success" id="toast">
+            <i class="fa-solid fa-circle-check"></i>
+            <span id="toast-msg">Mensaje enviado con éxito!</span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
