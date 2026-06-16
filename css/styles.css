@@ -241,10 +241,6 @@ button, input, textarea {
     width: 100%;
     z-index: 100;
     background: rgba(7, 10, 19, 0.6);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid var(--glass-border);
-    transition: var(--transition-normal);
 }
 
 .header.scrolled {
@@ -347,18 +343,9 @@ button, input, textarea {
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: 800;
-    line-height: 1.1;
     margin-bottom: 1rem;
-}
-
-.hero-subtitle {
-    font-size: 2.2rem;
-    font-weight: 600;
-    color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-    height: 3.5rem; /* Prevents layout shifting during typing anim */
 }
 
 .hero-description {
@@ -1173,3 +1160,5 @@ textarea.form-input {
         font-size: 1.8rem;
     }
 }
+
+

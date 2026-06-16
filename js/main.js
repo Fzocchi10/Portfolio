@@ -1,54 +1,65 @@
 // DATA: Project Details
 const projectsData = {
     "1": {
-        title: "Registro Personas y Vehículos",
+        title: "Registro de personas y vehículos",
         icon: "fa-car-side",
         category: "Aplicación Web Fullstack",
-        description: "Este proyecto es una aplicación web Fullstack que permite gestionar un registro completo de personas y los vehículos asociados a ellas. Se diseñó priorizando el desacoplamiento de componentes y la separación de responsabilidades, logrando un código mantenible y testeable.",
+        description: "Este proyecto académico, desarrollado en el ámbito universitario, es una aplicación web Full Stack que permite gestionar un registro completo de personas y los vehículos asociados a ellas. Fue diseñado priorizando el desacoplamiento de componentes y la separación de responsabilidades, logrando una arquitectura mantenible, escalable y testeable. Para ello, se implementó inyección de dependencias en la capa de persistencia, permitiendo intercambiar distintos proveedores de datos sin modificar la lógica de negocio. Actualmente, la aplicación puede trabajar con múltiples bases de datos y servicios de almacenamiento, incluyendo MySQL, MongoDB y Firebase.",
         technicalDetails: [
-            "<strong>Arquitectura Limpia:</strong> Implementación del <strong>Repository Pattern</strong> junto con <strong>Inyección de Dependencias</strong> en el backend Java/Spring Boot para aislar la lógica de negocio del acceso directo a la base de datos.",
-            "<strong>Modelado de Datos:</strong> Base de datos relacional MySQL configurada con relaciones de integridad referencial para modelar la asociación uno-a-muchos (una persona asociada a múltiples vehículos).",
-            "<strong>API RESTful:</strong> Endpoints optimizados para transacciones CRUD rápidas y seguras.",
-            "<strong>Interfaz Responsiva:</strong> Panel web construido con React que ofrece un diseño intuitivo, formularios reactivos con validaciones en tiempo real y sincronización asíncrona de datos."
+            "<strong>Arquitectura Modular y Desacoplada:</strong> Implementación de principios de arquitectura limpia y separación de responsabilidades mediante Inyección de Dependencias, permitiendo desacoplar la lógica de negocio de la capa de persistencia.",
+            "<strong>Persistencia intercambiable:</strong> Diseño de una capa de acceso a datos basada en contratos e implementaciones inyectables, permitiendo utilizar distintos proveedores de almacenamiento sin modificar la lógica de la aplicación. Actualmente soporta MongoDB (Mongoose), Firebase Firestore y almacenamiento en memoria para pruebas y desarrollo.",
+            "<strong>API RESTful:</strong> Desarrollo de endpoints REST utilizando Express y TypeScript para la gestión de personas y vehículos, implementando operaciones CRUD de forma segura y mantenible.",
+            "<strong>Frontend Moderno:</strong> Aplicación desarrollada con React 19, TypeScript y Vite, incorporando React Router para la navegación, Axios para la comunicación con la API y una interfaz responsiva construida con Bootstrap 5 y estilos personalizados.",
+            "<strong>Proyecto Académico:</strong> Aplicación desarrollada en el ámbito universitario con el objetivo de aplicar patrones de diseño, principios SOLID y buenas prácticas de desarrollo Full Stack."
         ],
-        tech: ["Java", "Spring Boot", "MySQL", "React", "Repository Pattern", "Inyección de Dependencias"]
+        tech: ["Node.js", "Firebase", "MySQL", "MongoDB", "React", "Repository Pattern", "Inyección de Dependencias"]
     },
     "2": {
         title: "CtaCteFlow",
         icon: "fa-wallet",
         category: "Sistema de Gestión Financiera",
-        description: "Sistema web de gestión de cuentas corrientes diseñado para centralizar la administración de clientes, movimientos, saldos y el seguimiento financiero de manera simple y sumamente eficiente.",
+        description: "Aplicación web para la gestión de cuentas corrientes que permite administrar clientes, registrar movimientos y consultar saldos de manera simple y eficiente.",
         technicalDetails: [
-            "<strong>Control Financiero:</strong> Flujo preciso para debitar, acreditar e inspeccionar saldos de cuentas de clientes sin inconsistencias transaccionales.",
-            "<strong>Historial Completo:</strong> Registro inmutable de transacciones que facilita auditorías y reportes históricos inmediatos.",
-            "<strong>Backend Eficiente:</strong> API robusta desarrollada en Node.js y Express estructurada con TypeScript para garantizar tipado estricto y prevención de errores.",
-            "<strong>Base de Datos:</strong> PostgreSQL para la gestión transaccional robusta con soporte ACID (Atomicity, Consistency, Isolation, Durability)."
+            "<strong>Gestión de Clientes:</strong> Administración centralizada de clientes y sus cuentas corrientes.",
+            "<strong>Registro de Movimientos:</strong> Carga y consulta de débitos, créditos y operaciones asociadas a cada cuenta.",
+            "<strong>Cálculo de Saldos:</strong> Actualización y visualización de saldos en función de los movimientos registrados.",
+            "<strong>Arquitectura Full Stack:</strong> Separación entre frontend desarrollado en React y backend construido con Node.js, Express y TypeScript."
         ],
-        tech: ["Node.js", "Express", "TypeScript", "PostgreSQL", "React", "Bootstrap/CSS"]
+        tech: ["React", "TypeScript", "Node.js", "Express", "TypeScript"]
+
     },
     "3": {
         title: "Encargo",
         icon: "fa-truck-ramp-box",
         category: "Aplicación de Pedidos Multiplataforma",
-        description: "Completo ecosistema para la gestión y realización de pedidos. Cuenta con un backend de alto rendimiento, un frontend web administrativo para comercios y una aplicación móvil nativa para los clientes finales.",
+        description: "Sistema de gestión de pedidos compuesto por un backend API, una aplicación web administrativa y una aplicación móvil para clientes, diseñado para centralizar productos, pedidos y consultas.",
         technicalDetails: [
-            "<strong>Acceso a Datos Optimizado:</strong> Uso del ORM (Object Relational Mapper) <strong>Sequelize</strong> para interactuar con la base de datos MySQL mediante métodos orientados a objetos estructurados en TypeScript.",
-            "<strong>Estrategia de Caché:</strong> Implementación de la librería <strong>node-cache</strong> para almacenar en memoria consultas pesadas a la base de datos, logrando reducir los tiempos de respuesta de la API y bajando la carga de consultas SQL concurrentes.",
-            "<strong>Frontend Web Administrativo:</strong> Panel de control modular construido en React para la gestión de productos, estados de pedidos y facturación.",
-            "<strong>Frontend Mobile:</strong> Aplicación móvil nativa multiplataforma (iOS y Android) desarrollada en React Native, optimizada para ofrecer una experiencia fluida al usuario final."
+            "<strong>Backend API:</strong> Desarrollado con Node.js y TypeScript para gestionar productos, pedidos y lógica de negocio.",
+            "<strong>Persistencia de Datos:</strong> Integración con MySQL utilizando Sequelize ORM para trabajar con entidades y relaciones mediante TypeScript.",
+            "<strong>Optimización de Consultas:</strong> Implementación de node-cache para almacenar temporalmente información frecuente y reducir consultas repetitivas a la base de datos.",
+            "<strong>Frontend Multiplataforma:</strong> Desarrollo de una aplicación web administrativa con React y una aplicación móvil con React Native para clientes finales."
         ],
-        tech: ["Node.js", "TypeScript", "MySQL", "Sequelize ORM", "Node-Cache", "React", "React Native"]
+        tech: [
+            "Node.js",
+            "TypeScript",
+            "MySQL",
+            "Sequelize",
+            "Node-Cache",
+            "React",
+            "React Native"
+        ]
     },
     "4": {
         title: "Tp-Combustible",
         icon: "fa-gas-pump",
         category: "Sistema de Gestión de Flota",
-        description: "Sistema empresarial enfocado en la administración de consumos y cargas de combustible para flotas de vehículos comerciales u organizacionales.",
+        description: "Sistema de gestión de consumos y cargas de combustible para flotas de vehículos, desarrollado en el ámbito universitario como proyecto colaborativo orientado al diseño e implementación de una solución empresarial." ,
         technicalDetails: [
             "<strong>Cálculo de Consumo:</strong> Lógica del backend diseñada para calcular eficientemente el rendimiento por kilómetro recorrido y alertar sobre desvíos o consumos inusuales.",
             "<strong>Arquitectura Backend:</strong> Desarrollado en Java utilizando Spring Boot para la creación de servicios REST estables y escalables.",
             "<strong>Integración de Datos:</strong> Base de datos relacional PostgreSQL con modelado para vehículos, conductores y registros históricos de carga.",
-            "<strong>Dashboard Web:</strong> Frontend desarrollado con React para visualizar gráficos de consumos de combustible, auditoría de tickets de carga y reportes analíticos."
+            "<strong>Dashboard Web:</strong> Frontend desarrollado con React para visualizar gráficos de consumos de combustible, auditoría de tickets de carga y reportes analíticos.",
+            "<strong>Trabajo en Equipo:</strong> Desarrollo colaborativo con división de responsabilidades y coordinación entre distintas áreas del proyecto."
         ],
         tech: ["Java", "Spring Boot", "PostgreSQL", "React", "CSS Variables", "REST API"]
     }
@@ -332,4 +343,24 @@ document.addEventListener("DOMContentLoaded", () => {
         const year = new Date().getFullYear();
         copyrightYear.innerHTML = `&copy; ${year} Franco Zocchi. Todos los derechos reservados.`;
     }
+});
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_2ecmppa';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
 });
