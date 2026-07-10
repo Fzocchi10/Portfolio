@@ -62,6 +62,17 @@ const projectsData = {
             "<strong>Trabajo en Equipo:</strong> Desarrollo colaborativo con división de responsabilidades y coordinación entre distintas áreas del proyecto."
         ],
         tech: ["Java", "Spring Boot", "PostgreSQL", "React", "CSS Variables", "REST API"]
+    },
+    "5": {
+        title: "Proyecto Academico de POO",
+        icon: "fa-server",
+        category: "Sistema de Gestión de Flota",
+        description: "El objetivo del proyecto es desarrollar una aplicación web que permita gestionar los integrantes de una organización familiar mediante una API REST. El sistema administra diferentes tipos de integrantes, diferenciando entre criminales y respetables, aplicando las reglas de negocio correspondientes a cada uno. Además de realizar las operaciones básicas de alta, baja, modificación y consulta (CRUD), el sistema garantiza la integridad de los datos mediante validaciones que impiden realizar acciones incompatibles con el tipo de integrante, como asignar armas a personas respetables o títulos a criminales. El proyecto busca aplicar los conceptos fundamentales de Programación Orientada a Objetos, persistencia de datos y desarrollo de servicios REST, utilizando una arquitectura organizada y escalable." ,
+        technicalDetails: [
+            "<strong>Programación Orientada a Objetos:</strong> Implementación de principios de POO como encapsulamiento, herencia y polimorfismo.",
+            "<strong>Arquitectura del Sistema:</strong> Diseño modular que facilita la mantenibilidad y expansión del proyecto.",
+        ],
+        tech: ["Java", "Spring Boot", "Maven", "HTML", "CSS", "REST API"]
     }
 };
 
