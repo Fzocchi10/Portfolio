@@ -1,21 +1,8 @@
 // DATA: Project Details
 const projectsData = {
     "1": {
-        title: "Registro de personas y vehículos",
-        icon: "fa-car-side",
-        category: "Aplicación Web Fullstack",
-        description: "Este proyecto académico, desarrollado en el ámbito universitario, es una aplicación web Full Stack que permite gestionar un registro completo de personas y los vehículos asociados a ellas. Fue diseñado priorizando el desacoplamiento de componentes y la separación de responsabilidades, logrando una arquitectura mantenible, escalable y testeable. Para ello, se implementó inyección de dependencias en la capa de persistencia, permitiendo intercambiar distintos proveedores de datos sin modificar la lógica de negocio. Actualmente, la aplicación puede trabajar con múltiples bases de datos y servicios de almacenamiento, incluyendo MySQL, MongoDB y Firebase.",
-        technicalDetails: [
-            "<strong>Arquitectura Modular y Desacoplada:</strong> Implementación de principios de arquitectura limpia y separación de responsabilidades mediante Inyección de Dependencias, permitiendo desacoplar la lógica de negocio de la capa de persistencia.",
-            "<strong>Persistencia intercambiable:</strong> Diseño de una capa de acceso a datos basada en contratos e implementaciones inyectables, permitiendo utilizar distintos proveedores de almacenamiento sin modificar la lógica de la aplicación. Actualmente soporta MongoDB (Mongoose), Firebase Firestore y almacenamiento en memoria para pruebas y desarrollo.",
-            "<strong>API RESTful:</strong> Desarrollo de endpoints REST utilizando Express y TypeScript para la gestión de personas y vehículos, implementando operaciones CRUD de forma segura y mantenible.",
-            "<strong>Frontend Moderno:</strong> Aplicación desarrollada con React 19, TypeScript y Vite, incorporando React Router para la navegación, Axios para la comunicación con la API y una interfaz responsiva construida con Bootstrap 5 y estilos personalizados.",
-            "<strong>Proyecto Académico:</strong> Aplicación desarrollada en el ámbito universitario con el objetivo de aplicar patrones de diseño, principios SOLID y buenas prácticas de desarrollo Full Stack."
-        ],
-        tech: ["Node.js", "Firebase", "MySQL", "MongoDB", "React", "Repository Pattern", "Inyección de Dependencias"]
-    },
-    "2": {
-        title: "CtaCteFlow",
+        title: "Contix",
+        image: "assets/Contixicono.png",
         icon: "fa-wallet",
         category: "Sistema de Gestión Financiera",
         description: "Aplicación web para la gestión de cuentas corrientes que permite administrar clientes, registrar movimientos y consultar saldos de manera simple y eficiente.",
@@ -28,8 +15,9 @@ const projectsData = {
         tech: ["React", "TypeScript", "Node.js", "Express", "TypeScript"]
 
     },
-    "3": {
+    "2": {
         title: "Encargo",
+        image: "assets/encargo.png",
         icon: "fa-truck-ramp-box",
         category: "Aplicación de Pedidos Multiplataforma",
         description: "Sistema de gestión de pedidos compuesto por un backend API, una aplicación web administrativa y una aplicación móvil para clientes, diseñado para centralizar productos, pedidos y consultas.",
@@ -49,8 +37,8 @@ const projectsData = {
             "React Native"
         ]
     },
-    "4": {
-        title: "Tp-Combustible",
+    "3": {
+        title: "Combustible Flotas",
         icon: "fa-gas-pump",
         category: "Sistema de Gestión de Flota",
         description: "Sistema de gestión de consumos y cargas de combustible para flotas de vehículos, desarrollado en el ámbito universitario como proyecto colaborativo orientado al diseño e implementación de una solución empresarial." ,
@@ -62,17 +50,6 @@ const projectsData = {
             "<strong>Trabajo en Equipo:</strong> Desarrollo colaborativo con división de responsabilidades y coordinación entre distintas áreas del proyecto."
         ],
         tech: ["Java", "Spring Boot", "PostgreSQL", "React", "CSS Variables", "REST API"]
-    },
-    "5": {
-        title: "Proyecto Academico de POO",
-        icon: "fa-users",
-        category: "Sistema de Gestión de Flota",
-        description: "El objetivo del proyecto es desarrollar una aplicación web que permita gestionar los integrantes de una organización familiar mediante una API REST. El sistema administra diferentes tipos de integrantes, diferenciando entre criminales y respetables, aplicando las reglas de negocio correspondientes a cada uno. Además de realizar las operaciones básicas de alta, baja, modificación y consulta (CRUD), el sistema garantiza la integridad de los datos mediante validaciones que impiden realizar acciones incompatibles con el tipo de integrante, como asignar armas a personas respetables o títulos a criminales. El proyecto busca aplicar los conceptos fundamentales de Programación Orientada a Objetos, persistencia de datos y desarrollo de servicios REST, utilizando una arquitectura organizada y escalable." ,
-        technicalDetails: [
-            "<strong>Programación Orientada a Objetos:</strong> Implementación de principios de POO como encapsulamiento, herencia y polimorfismo.",
-            "<strong>Arquitectura del Sistema:</strong> Diseño modular que facilita la mantenibilidad y expansión del proyecto.",
-        ],
-        tech: ["Java", "Spring Boot", "Maven", "HTML", "CSS", "REST API"]
     }
 };
 
@@ -223,14 +200,18 @@ document.addEventListener("DOMContentLoaded", () => {
         // Create bullet features list
         const detailsHtml = data.technicalDetails.map(detail => `<li>${detail}</li>`).join("");
 
+        const categoryIconHtml = data.image 
+            ? `<img src="${data.image}" alt="${data.title}" style="width: 26px; height: 26px; border-radius: 6px; object-fit: contain;">`
+            : `<i class="fa-solid ${data.icon}"></i>`;
+
         // Hydrate HTML
         modalDataContainer.innerHTML = `
             <div class="modal-header">
                 <div class="modal-title-row">
                     <h3 class="modal-title">${data.title}</h3>
                 </div>
-                <p class="text-gradient" style="font-weight: 600; font-size: 1.1rem; margin-top:0.25rem;">
-                    <i class="fa-solid ${data.icon}"></i> ${data.category}
+                <p class="text-gradient" style="font-weight: 600; font-size: 1.1rem; margin-top:0.25rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    ${categoryIconHtml} <span>${data.category}</span>
                 </p>
                 <div class="modal-tech-list" style="margin-top: 1rem;">
                     ${techHtml}
@@ -248,10 +229,16 @@ document.addEventListener("DOMContentLoaded", () => {
                     </ul>
                 </div>
                 <div class="modal-links">
-                    <button class="btn btn-secondary" onclick="document.getElementById('modal-overlay').classList.remove('open')">Cerrar</button>
+                    <button class="btn btn-secondary" id="modal-btn-close">Cerrar</button>
                 </div>
             </div>
         `;
+
+        // Attach listener to dynamically inserted close button
+        const modalBtnClose = document.getElementById("modal-btn-close");
+        if (modalBtnClose) {
+            modalBtnClose.addEventListener("click", closeModal);
+        }
 
         // Add class to open overlay
         modalOverlay.classList.add("open");
@@ -260,8 +247,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function closeModal() {
         modalOverlay.classList.remove("open");
-        document.body.style.overflow = "auto"; // Re-enable scrolling
+        document.body.style.overflow = ""; // Re-enable page scrolling
     }
+
+    // Expose closeModal globally for safety
+    window.closeModal = closeModal;
 
     // Attach click events to project cards
     projectCards.forEach(card => {
